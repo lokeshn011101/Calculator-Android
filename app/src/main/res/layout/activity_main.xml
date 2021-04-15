@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitron"
+            android:textColor="#f09b00"
+            android:gravity="end"
+            android:paddingTop="24dp"
+            android:paddingEnd="16dp"
+            android:text=""
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/orbitron"
+            android:gravity="end"
+            android:padding="16dp"
+            android:textSize="40sp"
+            android:text="0.0" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:rowCount="5">
+
+
+        <Button
+            android:id="@+id/ac"
+            android:layout_rowWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_columnWeight="2"
+            android:layout_gravity="fill"
+            android:fontFamily="@font/share_tech_mono"
+            android:background="@drawable/ac_back"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:onClick="clear"
+            android:text="AC"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/divide"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/op_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:onClick="operator"
+            android:text="/"/>
+        <Button
+            android:id="@+id/multiply"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="@drawable/op_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:onClick="operator"
+            android:text="*"/>
+
+
+        <Button
+            android:id="@+id/seven"
+            android:gravity="center"
+            android:text="7"
+            android:onClick="operand"
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+        <Button
+            android:id="@+id/eight"
+            android:gravity="center"
+            android:text="8"
+            android:onClick="operand"
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:id="@+id/nine"
+            android:gravity="center"
+            android:text="9"
+            android:onClick="operand"
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:id="@+id/minus"
+            android:gravity="center"
+            android:text="-"
+            android:onClick="operator"
+            android:background="@drawable/op_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+
+
+        <Button
+            android:id="@+id/four"
+            android:gravity="center"
+            android:text="4"
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:onClick="operand"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+        <Button
+            android:id="@+id/five"
+            android:gravity="center"
+            android:text="5"
+            android:onClick="operand"
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:id="@+id/six"
+            android:gravity="center"
+            android:text="6"
+            android:onClick="operand"
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:id="@+id/plus"
+            android:gravity="center"
+            android:text="+"
+            android:background="@drawable/op_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:onClick="operator"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+
+        <Button
+            android:id="@+id/one"
+            android:gravity="center"
+            android:text="1"
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:onClick="operand"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+        <Button
+            android:id="@+id/two"
+            android:gravity="center"
+            android:text="2"
+            android:onClick="operand"
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:id="@+id/three"
+            android:gravity="center"
+            android:text="3"
+            android:onClick="operand"
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+        <Button
+            android:id="@+id/equal"
+            android:gravity="center"
+            android:text="="
+            android:background="@drawable/eq_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_rowSpan="2"
+            android:onClick="compute"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+
+        <Button
+            android:id="@+id/zero"
+            android:gravity="center"
+            android:text="0"
+            android:onClick="operand"
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:layout_columnSpan="2"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1" />
+        <Button
+            android:id="@+id/decimal"
+            android:gravity="center"
+            android:text="."
+            android:background="@drawable/nu_back"
+            android:fontFamily="@font/share_tech_mono"
+            android:textSize="24sp"
+            android:onClick="operand"
+            android:textColor="#fff"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+</LinearLayout>
